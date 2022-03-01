@@ -1,4 +1,4 @@
 <?php
 
-echo "print the value";
+echo "test file";
 ?>
