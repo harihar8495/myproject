@@ -1,4 +1,6 @@
 <?php
-
-echo "practise";
-?>
+function createmicrobrewery(string $breweryName= 'Hipster brew'):void
+{
+    echo $breweryName;
+}
+createmicrobrewery('haldee');
