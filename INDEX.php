@@ -1,4 +1,4 @@
 <?php
 
-echo "test file";
+echo "practise";
 ?>
