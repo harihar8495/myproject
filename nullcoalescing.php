@@ -175,11 +175,11 @@ class Players
         $this->country = $country;
 
     }
-    public function intro(){
+    final public function intro(){
         echo "{$this->name} and he represents the country {$this->country}";
     }
 }
-class Virat extends Players{ //virat inherited from parents class players
+final class Virat extends Players{ //virat inherited from parents class players
     public function attitude(){
         echo "Most passionated player is ";
     }
