@@ -184,7 +184,7 @@ class Virat extends Players{ //virat inherited from parents class players
         echo "Most passionated player is ";
     }
 }
-class Dhoni extends Players{//overhiding inherited methods
+class Dhoni extends Players{//overriding inherited methods
     private $city;
     public function __construct(string $name,string $country,string $city){
         $this->name =$name;
@@ -210,3 +210,19 @@ class Country{
 }
 $country = new Country();
 $country->native();
+
+
+abstract class Animals{
+    private $name;
+    public function __construct($name){
+        this->name = $name;
+    }
+    abstract public function intro():string;
+}
+class Tiger extends Animals{
+    public function  intro():string{
+        return "$this->name is carnivore";
+    }
+}
+$tiger = new Animals("tiger");
+echo $tiger->intro();
