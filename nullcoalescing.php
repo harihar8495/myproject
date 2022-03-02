@@ -163,3 +163,27 @@ function addition(int $value1,int $value2):int
 }
 $add = addition(3,3);
 print($add);
+
+
+//oops inheritance example
+class Players
+{
+    private $name;
+    private $country;
+    public function __construct(string $name,string $country){
+        $this->name = $name;
+        $this->country = $country;
+
+    }
+    public function intro(){
+        echo "{$this->name} and he represents the country {$this->country}";
+    }
+}
+class Virat extends Players{ //virat inherited from parents class players
+    public function attitude(){
+        echo "Most passionated player is ";
+    }
+}
+$virat = new Virat('viratkohli','india');
+$virat->attitude();
+$virat->intro();
