@@ -184,6 +184,17 @@ class Virat extends Players{ //virat inherited from parents class players
         echo "Most passionated player is ";
     }
 }
-$virat = new Virat('viratkohli','india');
-$virat->attitude();
-$virat->intro();
+class Dhoni extends Players{//overhiding inherited methods
+    private $city;
+    public function __construct(string $name,string $country,string $city){
+        $this->name =$name;
+        $this->country = $country;
+        $this->city = $city;
+    }
+    public function intro(){
+        echo "{$this->name} ,he represents {$this->country} and from {$this->city}";
+    }
+}
+
+$dhoni = new Dhoni('msdhoni','india','raipur');
+$dhoni->intro();
