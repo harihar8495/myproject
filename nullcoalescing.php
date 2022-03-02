@@ -154,3 +154,12 @@ $car = new Car;
 echo $car->vehicleName();
 $truck = new Truck;
 echo $truck->vehicleName();
+
+
+//coding standards avoid type checking
+function addition(int $value1,int $value2):int
+{
+    return $value1 + $value2;
+}
+$add = addition(3,3);
+print($add);
