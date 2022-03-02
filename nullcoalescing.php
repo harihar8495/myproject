@@ -179,7 +179,7 @@ class Players
         echo "{$this->name} and he represents the country {$this->country}";
     }
 }
-final class Virat extends Players{ //virat inherited from parents class players
+class Virat extends Players{ //virat inherited from parents class players
     public function attitude(){
         echo "Most passionated player is ";
     }
@@ -198,3 +198,15 @@ class Dhoni extends Players{//overhiding inherited methods
 
 $dhoni = new Dhoni('msdhoni','india','raipur');
 $dhoni->intro();
+
+
+
+class Country{
+    const HOMETOWN = "India";
+    public function native(){
+        echo self::HOMETOWN;
+
+    }
+}
+$country = new Country();
+$country->native();
