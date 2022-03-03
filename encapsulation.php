@@ -6,7 +6,7 @@ class Details
     private $account;
 
 
-    public function __construct($full_name, $address, $account)
+    public function __construct(string $full_name,string $address, string $account)
     {
         $this->full_name = $full_name;
         $this->address = $address;
