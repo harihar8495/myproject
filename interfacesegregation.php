@@ -5,7 +5,7 @@ interface Vehicles{
 interface Owner{
     public function ownerName();
 }
-class Car implements Vehicles{
+class Car implements Vehicles,Owner{
 
     public function vehicleName(){
         echo "Four Wheeler";
