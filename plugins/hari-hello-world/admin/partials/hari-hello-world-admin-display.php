@@ -16,4 +16,5 @@
  */
 ?>
 <h1>Hello World</h1>
+<h2 style="color: #0d66c2">This is Hariharan</h2>
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
